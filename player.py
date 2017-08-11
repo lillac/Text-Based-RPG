@@ -5,3 +5,11 @@ class player(object):
     self.name = name
     self.hp = hp
     self.inv = inventory()
+    
+  def move(self, dir):
+    pass
+  
+  def attack(self, enemy):
+    pass
+  
+ 
