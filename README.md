@@ -1,2 +1,2 @@
 # Text-Based-RPG
-Python RPG Because Screw You Abe
+Python RPG cause abe's a salty cunt
