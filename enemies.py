@@ -14,6 +14,11 @@ class enemy(object):
 class cavebat(enemy):
     def __init__(self):
         super(cavebat, self).__init__('Cave Bat', 'Small annoying creature ~ kinda like abe', 10)
-        self.inv.add(items.gold, 1)
+        
+class wolf(enemy):
+    def __init__(self):
+        super(wolf, self).__init__('Wolf', 'An angry wolf, possably rabid', 50)
+        
 
 cavebat = cavebat()
+wolf    = wolf()
