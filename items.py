@@ -18,6 +18,14 @@ gold = gold()
 wood = wood()
 stone = stone()
 
+#Food (Name, Description, Value, Neutrition)
+
+class apple(i.food):
+    def __init__(self):
+        super(apple, self).__init__('Apple', 'A ripe green apple', 1, 5)
+        
+apple = apple()
+
 #Weapons (Name, Description, Value, Attack, Block)
 
 class rock(i.weapon):
