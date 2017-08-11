@@ -29,3 +29,8 @@ class questItem(item):
     def __init__(self, name, desc, value, questID):
         super(questItem, self).__init__(name, desc, value)
         self.questID = questID
+        
+class food(item):
+    def __init__(self, name, desc, value, neut):
+        super(food, self).__init__(name, desc, value)
+        self.neut = neut
