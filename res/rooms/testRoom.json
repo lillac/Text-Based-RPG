@@ -1,0 +1,12 @@
+{
+  "name": "Testing Room",
+  "text": "A Room For Testing",
+  "items": {
+    "items.gold": 50,
+    "items.ironDagger": 1
+  },
+  "enemies": [
+    "enemies.cavebat()",
+    "enemies.wolf()"
+  ]
+}
