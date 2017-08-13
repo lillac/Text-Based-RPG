@@ -1,2 +1,5 @@
 # Text-Based-RPG
-Python RPG cause abe's a salty cunt
+TODO: Make a better Readme  
+  
+  
+[A Shitier Way To Do Things](https://github.com/TheScrawl/TextEngine/tree/TextEngineRewrite)
