@@ -23,6 +23,7 @@ class tile(object):
         self.text = data['text']
         self.enemies = loadEnemies(data['enemies'])
         self.items = loadItems(data['items'])
+        self.options = data['options']
 
     def search(self, iore):
         if(iore == 'e'):
@@ -55,30 +56,13 @@ class tile(object):
 
     def enter(self):
         print(self.name + '\n' + self.text + '\n')
-        options = {
-          "1":{
-            "Text": "Search For Items",
-            "Func": "self.search('i')"
-          },
-          "2":{
-            "Text": "Seach For Enemies",
-            "Func": "self.search('e')"
-          },
-          "3":{
-            "Text": "Take Items",
-            "Func": "self.take()"
-          },
-          "4":{
-            "Text": "Exit"
-          }
-        }
         while(True):
-            for k, v in sorted(options.items()):
+            for k, v in sorted(self.options.items()):
                 print(k + ' : ' + v['Text'])
-            choice = input('> ')
-            if(choice not in options.keys()):
-                print('Error, Not a Choice')
+            choice = str(input('> '))
+            if(choice not in self.options.keys()):
+                print('Thats not something i can do')
             elif(choice == '4'):
                 return
             else:
-                exec(options[choice]['Func'])
+                exec(self.options[choice]['Func'])

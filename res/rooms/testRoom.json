@@ -1,12 +1,20 @@
 {
   "name": "Testing Room",
   "text": "A Room For Testing",
+  "options": {
+    "1":{
+      "Text": "Option 1",
+      "Func": "print('It\\'s Option 1')"
+    },
+    "2":{
+      "Text": "Option 2",
+      "Func": "print('It\\'s Option 2')"
+    }
+  },
   "items": {
-    "items.gold": 50,
-    "items.ironDagger": 1
+    "items.rock": 1
   },
   "enemies": [
-    "enemies.cavebat()",
-    "enemies.wolf()"
+    "enemies.cavebat()"
   ]
 }
