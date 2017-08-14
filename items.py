@@ -30,12 +30,12 @@ class apple(i.food):
     def __init__(self):
         super(apple, self).__init__('Apple', 'A ripe green apple', 1, 5)
         
-class rasb(i.food):
+class raspberry(i.food):
     def __init__(self):
-        super(rasb, self).__init__('Rasberries', 'A cluster of rasberries', 1, 3)
+        super(raspberry, self).__init__('Raspberrys', 'A cluster of rasberries', 1, 3)
         
 apple = apple()
-rasb = rasb()
+raspberry = raspberry()
 
 #Weapons (Name, Description, Value, Attack, Block)
 
